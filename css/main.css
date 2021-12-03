@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header--color {
+  background-color: #8B8989;
+  flex-basis: 10em;
+}
+
+.footer--color {
+  background-color: #8B8989;
+  flex-basis: 10rem;
+}
+
+.container__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+  .nav--color{
+    order: 2;
+  } 
+  .container__content {
+    flex-direction: column;
+  }
+}
+
+.nav--color {
+  background-color: #FF6347;
+  flex: 1;
+}
+
+.content--color {
+  background-color: #CDC9C9;
+  flex-basis: 50em;
+  height: 50em;
+}
+
+.aside--color {
+  background-color: #4876FF;
+  flex: 1;
+}
